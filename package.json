@@ -1,0 +1,23 @@
+{
+  "name": "absentee-valet",
+  "version": "1.0.0",
+  "description": "PKC Parking Eye of Providence",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkcsecurity/absentee-valet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pkcsecurity/absentee-valet/issues"
+  },
+  "homepage": "https://github.com/pkcsecurity/absentee-valet#readme",
+  "dependencies": {
+    "node-blink-security": "file:node-blink-security",
+    "request": "^2.88.0"
+  }
+}
