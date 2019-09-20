@@ -14,15 +14,10 @@ const returnImageThumbnails = async () => {
         return imageData;
       })
     );
-    console.log(arrayOfImageThumbs);
-    return arrayOfImageThumbs;
   } catch (err) {
     console.log('camerasErr', err);
     return [];
   }
 };
 
-//export default returnImageThumbnails;
-
-console.log(returnImageThumbnails());
-
+export default returnImageThumbnails;
