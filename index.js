@@ -1,14 +1,18 @@
-const Blink = require('node-blink-security');
+module.exports.handler = async (event) => {
+  const response = {
+    statusCode: 200,
+    body: JSON.stringify(
+      {
+        message: 'Go Serverless v1.0! Your function executed successfully!',
+        input: event,
+      },
+      null,
+      2
+    ),
+  };
 
-var blink = new Blink(process.env.BLINK_USERNAME, process.env.BLINK_PASSWORD);
-blink.setupSystem().then(
-  () => {
-    blink.setArmed().then(() => {
-      // see the object dump for details
-      console.log(blink);
-    });
-  },
-  error => {
-    console.log(error);
-  },
-);
+  return response;
+
+  // Use this code if you don't use the http event with the LAMBDA-PROXY integration
+  // return { message: 'Go Serverless v1.0! Your function executed successfully!', event };
+};

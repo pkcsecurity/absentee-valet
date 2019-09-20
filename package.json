@@ -20,5 +20,8 @@
   "dependencies": {
     "node-blink-security": "file:node-blink-security",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "serverless-api-gateway-caching": "^1.4.0"
   }
 }
