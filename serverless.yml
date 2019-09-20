@@ -45,12 +45,12 @@ provider:
     BLINK_PASSWORD: ${env:BLINK_PASSWORD}
 
 # you can add packaging information here
-#package:
-#  include:
-#    - include-me.js
-#    - include-me-dir/**
-#  exclude:
-#    - exclude-me.js
+package:
+  #  include:
+  #    - include-me.js
+  #    - include-me-dir/**
+  exclude:
+    - AbsenteeValet/**
 #    - exclude-me-dir/**
 
 functions:

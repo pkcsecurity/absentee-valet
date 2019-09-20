@@ -1,4 +1,4 @@
-const AWS = require('aws-dek');
+const AWS = require('aws-sdk');
 
 const _ = require('lodash');
 
