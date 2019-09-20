@@ -1,3 +1,5 @@
+const Blink = require('node-blink-security');
+
 const blink = new Blink(process.env.BLINK_USERNAME, process.env.BLINK_PASSWORD);
 blink.setupSystem().then(
   () => {
