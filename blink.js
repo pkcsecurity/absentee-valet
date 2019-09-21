@@ -4,11 +4,11 @@ var fs = require('fs');
 
 const blink = new Blink(process.env.BLINK_USERNAME, process.env.BLINK_PASSWORD);
 
-const returnImageThumbnails = async () => {
+module.exports.returnImageThumbnails = async () => {
   try {
     await blink.setupSystem();
     const arrayOfImageThumbs = await Promise.all(
-      _(blink.cameras).map(async camera => {
+      _(blink.cameras).map(async (camera) => {
         console.log(camera.name);
         console.log(camera.motion);
         console.log(camera.updated_at);
@@ -30,4 +30,3 @@ const returnImageThumbnails = async () => {
 };
 
 //returnImageThumbnails();
-export default returnImageThumbnails;
