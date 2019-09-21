@@ -1,10 +1,12 @@
 const _ = require('lodash');
-const getPictures = require('./blink');
+const { returnImageThumbnails } = require('./blink');
 const { getCarCount } = require('./rekognition');
 
 module.exports.handler = async (event) => {
-  const pictures = await getPictures();
+  const pictures = await returnImageThumbnails();
   const carCount = await Promise.all(_.map(pictures, async (p) => await getCarCount(p)));
+
+  console.log(carCount);
   const response = {
     statusCode: 200,
     body: JSON.stringify(
