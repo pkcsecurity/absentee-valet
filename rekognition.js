@@ -1,11 +1,11 @@
 const AWS = require('aws-sdk');
-
 const _ = require('lodash');
 
-const credentials = new AWS.SharedIniFileCredentials({ profile: 'default' });
-AWS.config.credentials = credentials;
-AWS.config.update({ region: 'us-east-1' });
-const rekog = new AWS.Rekognition();
+const rekog = new AWS.Rekognition({
+  accessKeyId: process.env.ACCESS_KEY,
+  secretAccessKey: process.env.SECRET_KEY,
+  region: 'us-east-1',
+});
 
 module.exports.getCarCount = async (picture) => {
   const params = {

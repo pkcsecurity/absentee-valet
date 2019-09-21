@@ -43,6 +43,8 @@ provider:
   environment:
     BLINK_USERNAME: ${env:BLINK_USERNAME}
     BLINK_PASSWORD: ${env:BLINK_PASSWORD}
+    ACCESS_KEY: ${env:ACCESS_KEY}
+    SECRET_KEY: ${env:SECRET_KEY}
 
 # you can add packaging information here
 package:
@@ -51,7 +53,7 @@ package:
   #    - include-me-dir/**
   exclude:
     - AbsenteeValet/**
-#    - exclude-me-dir/**
+    - react-native-my-geofence-library/**
 
 functions:
   main:
