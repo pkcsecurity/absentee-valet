@@ -17,6 +17,7 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* AbsenteeValetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AbsenteeValetTests.m */; };
+		BEE274BE23359DD000D31B82 /* Geofence.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE274BD23359DD000D31B82 /* Geofence.m */; };
 		C1EA3856F6B4D714CA14FFE0 /* libPods-AbsenteeValet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC35285016822FEADC3B63AA /* libPods-AbsenteeValet.a */; };
 		CF8E4A87A48E1E8BD1BC2A9B /* libPods-AbsenteeValetTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 893397E6E7BEEE54FEA9B3EC /* libPods-AbsenteeValetTests.a */; };
 		DA3433EFB2C80A9A94E71F09 /* libPods-AbsenteeValet-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE730274685806F87D4B2BF /* libPods-AbsenteeValet-tvOSTests.a */; };
@@ -62,6 +63,8 @@
 		694DCE5A5720E21113AD0B2B /* Pods-AbsenteeValetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbsenteeValetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AbsenteeValetTests/Pods-AbsenteeValetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		893397E6E7BEEE54FEA9B3EC /* libPods-AbsenteeValetTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AbsenteeValetTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E48F9E8891E3C87D60FAF98 /* Pods-AbsenteeValet-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbsenteeValet-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AbsenteeValet-tvOS/Pods-AbsenteeValet-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BEE274BC23359D9200D31B82 /* Geofence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Geofence.h; sourceTree = "<group>"; };
+		BEE274BD23359DD000D31B82 /* Geofence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Geofence.m; sourceTree = "<group>"; };
 		D39AEACA9767451BE0D45B3D /* Pods-AbsenteeValet-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbsenteeValet-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AbsenteeValet-tvOS/Pods-AbsenteeValet-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		D9784EF1BD720DAF68FB6AF3 /* Pods-AbsenteeValet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbsenteeValet.release.xcconfig"; path = "Pods/Target Support Files/Pods-AbsenteeValet/Pods-AbsenteeValet.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -132,6 +135,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				BEE274BC23359D9200D31B82 /* Geofence.h */,
+				BEE274BD23359DD000D31B82 /* Geofence.m */,
 			);
 			name = AbsenteeValet;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -529,6 +535,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				BEE274BE23359DD000D31B82 /* Geofence.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
