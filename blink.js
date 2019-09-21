@@ -17,9 +17,11 @@ module.exports.returnImageThumbnails = async () => {
           await camera.snapPicture();
           await camera.imageRefresh();
           const imageData = await camera.fetchImageData();
+          /*
           const wstream = fs.createWriteStream(`${camera.name}.jpg`);
           wstream.write(imageData);
           wstream.end();
+          */
           return imageData;
         })
     );
