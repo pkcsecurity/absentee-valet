@@ -91,13 +91,15 @@ extension AppDelegate: CLLocationManagerDelegate {
                     print(jsonResponse) //Response result
                     let jsonDict = jsonResponse as! [String: Any]
                     let carCountArray = jsonDict["carCount"] as! [Int]
-                    let smallLot = carCountArray[1]
-                    let bigLot = carCountArray[2]
+                    let smallLot = carCountArray[0]
+                    let smallLotVacancy = 4 - smallLot
+                    let bigLot = carCountArray[1]
+                    let bigLotVacancy = 6 - bigLot
                     //print(jsonDict)
                     // 1
                     let content = UNMutableNotificationContent()
                     content.title = "Parking Lot Update 🚙🚗"
-                    content.body = "Parking lot statuses: Small lot - " + String(smallLot) + ", big Lot - " + String(bigLot)
+                    content.body = "Parking lot statuses: Small lot vacancy: " + String(smallLotVacancy) + ", big Lot vacancy: " + String(bigLotVacancy)
                     content.sound = .default
                     
                     // 2

@@ -6,11 +6,11 @@
 	<string>Give us your location access</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Give us your location access</string>
-        <key>NSAppTransportSecurity</key>
-        <dict>
-          <key>NSAllowsArbitraryLoads</key>
-          <true/>
-        </dict>    
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

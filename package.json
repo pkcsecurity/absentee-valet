@@ -20,9 +20,10 @@
   "dependencies": {
     "aws-sdk": "^2.533.0",
     "lodash": "^4.17.15",
-    "node-blink-security": "^3.0.5"
+    "node-blink-security": "^3.0.5",
+    "sharp": "^0.23.3"
   },
   "devDependencies": {
-    "serverless-api-gateway-caching": "^1.4.0"
+    "serverless-api-gateway-caching": "^1.4.1"
   }
 }

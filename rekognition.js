@@ -7,9 +7,9 @@ const rekog = new AWS.Rekognition({
   region: 'us-east-1',
 });
 
-module.exports.getCarCount = async (picture) => {
+module.exports.getCarCount = async (pictureMap) => {
   const params = {
-    Image: { Bytes: picture },
+    Image: { Bytes: pictureMap["picture"] },
   };
 
   const res = await rekog.detectLabels(params).promise();

@@ -2,7 +2,6 @@ service: absentee-valet
 
 plugins:
   - serverless-api-gateway-caching
-
 custom:
   # Enable or disable caching globally
   apiGatewayCaching:

@@ -1,10 +1,11 @@
 const _ = require('lodash');
 const { returnImageThumbnails } = require('./blink');
 const { getCarCount } = require('./rekognition');
+const AWS = require('aws-sdk');
 
 module.exports.handler = async (event) => {
-  const pictures = await returnImageThumbnails();
-  const carCount = await Promise.all(_.map(pictures, async (p) => await getCarCount(p)));
+  const pictureMap = await returnImageThumbnails();
+  const carCount = await Promise.all(_.map(pictureMap, async (p) => await getCarCount(p)));
 
   console.log(carCount);
   const response = {
