@@ -99,7 +99,7 @@ extension AppDelegate: CLLocationManagerDelegate {
                     // 1
                     let content = UNMutableNotificationContent()
                     content.title = "Parking Lot Update 🚙🚗"
-                    content.body = "Parking lot statuses: Small lot vacancy: " + String(smallLotVacancy) + ", big Lot vacancy: " + String(bigLotVacancy)
+                    content.body = "Small lot vacancy: " + String(smallLotVacancy) + ", big Lot vacancy: " + String(bigLotVacancy)
                     content.sound = .default
                     
                     // 2
